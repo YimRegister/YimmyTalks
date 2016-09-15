@@ -1,5 +1,5 @@
 #hash table with collisions
-hash_table = [""] * 10
+hash_table = [""] * 5
 
 def hash_function(thing_to_be_hashed):
     #add up the ascii values of the string and mod length of table (takes care of overflow)
@@ -10,8 +10,8 @@ def insert(table,thing_to_be_hashed):
     hash_table[hash_function(thing_to_be_hashed)]=thing_to_be_hashed
 
 insert(hash_table,"Jon Snow")
-#insert(hash_table,"Andria")
-#insert(hash_table,"Adrian")
+insert(hash_table,"Andria")
+insert(hash_table,"Adrian")
 print(hash_table)
 
 #hash table that uses chaining
